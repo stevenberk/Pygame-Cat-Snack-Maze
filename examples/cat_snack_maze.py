@@ -32,7 +32,7 @@ class Speed_Boost(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
         self.active = True
         self.image = pygame.Surface([size[0], size[1]])
-        self.image.fill((0, 0, 0))
+        self.image.fill((55, 55, 55))
         self.rect = self.image.get_rect()
         self.rect.left = pos[1]
         self.rect.top = pos[0]
@@ -131,10 +131,13 @@ def main():
     #"speed bumps", in linear oder
     speed_boosters_group.add(Speed_Boost([90, 20],[90, 20]))
     speed_boosters_group.add(Speed_Boost([815, 100],[20, 50]))
-    #speed_boosters_group.add(Speed_Boost([875, 100],[20, 50]))
+    speed_boosters_group.add(Speed_Boost([875, 100],[20, 50]))
     speed_boosters_group.add(Speed_Boost([935, 160],[20, 50]))
     speed_boosters_group.add(Speed_Boost([745, 260],[20, 50]))
-    speed_boosters_group.add(Speed_Boost([935, 380],[3, 50])) # gap begin"
+    speed_boosters_group.add(Speed_Boost([935, 365],[3, 50]))# gap begin"
+    speed_boosters_group.add(Speed_Boost([935, 370],[3, 50]))
+    speed_boosters_group.add(Speed_Boost([935, 375],[3, 50]))
+    speed_boosters_group.add(Speed_Boost([935, 380],[3, 50])) 
     speed_boosters_group.add(Speed_Boost([935, 385],[3, 50]))
     speed_boosters_group.add(Speed_Boost([935, 389],[3, 50]))
     speed_boosters_group.add(Speed_Boost([935, 394],[3, 50]))
@@ -152,10 +155,16 @@ def main():
     speed_boosters_group.add(Speed_Boost([935, 454],[3, 50]))
     speed_boosters_group.add(Speed_Boost([935, 459],[3, 50]))
     speed_boosters_group.add(Speed_Boost([935, 464],[3, 50]))
-    speed_boosters_group.add(Speed_Boost([935, 469],[3, 50])) # gap end
+    speed_boosters_group.add(Speed_Boost([935, 469],[3, 50])) 
+    speed_boosters_group.add(Speed_Boost([935, 474],[3, 50])) 
+    speed_boosters_group.add(Speed_Boost([935, 479],[3, 50])) 
+    speed_boosters_group.add(Speed_Boost([935, 484],[3, 50])) 
+    speed_boosters_group.add(Speed_Boost([935, 489],[3, 50])) # gap end
     speed_boosters_group.add(Speed_Boost([212, 450],[10, 50]))
     speed_boosters_group.add(Speed_Boost([390, 310],[60, 10]))
-    
+    speed_boosters_group.add(Speed_Boost([280, 740],[10, 50]))
+    speed_boosters_group.add(Speed_Boost([390, 210],[90, 10]))
+    speed_boosters_group.add(Speed_Boost([730, 380],[90, 10]))
     
 
 
