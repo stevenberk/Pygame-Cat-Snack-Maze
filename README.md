@@ -1,4 +1,4 @@
-# pygame
+# Cat Snack Maze
 
 The objective of this maze is to move the slice of cake with the arrow keys to the nyancat without touching the maze walls. The game looks simple and straightforward but in practice, but it is very difficult to win. There are invisible "speed traps" throughout the maze. These speed traps are the same color as the background (to make them invisible to the user). The speed traps increase the amount of pixels the sprite moves with each arrowkey event.
 
